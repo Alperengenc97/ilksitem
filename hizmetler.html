@@ -11,18 +11,16 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box; /* Tüm elemanlar için kutu modelini düzeltir */
+            box-sizing: border-box;
         }
         html, body {
-            margin: 0;
-            padding: 0;
             width: 100%;
-            overflow-x: hidden; /* Sağ taraftaki boşluğu engeller */
+            overflow-x: hidden; /* Sağdaki boşluğu engeller */
         }
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #f0fdf0; /* Hafif açık yeşil arka plan */
-            color: #333333; /* Genel metin koyu gri */
+            background-color: #f0fdf0;
+            color: #333333;
         }
         header {
             background-color: #2ecc71;
@@ -32,26 +30,24 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: sticky; /* Yukarıda sabit kalsın */
-            top: 0;
-            z-index: 1000;
         }
-        header nav ul {
+        nav ul {
             list-style: none;
             display: flex;
-            gap: 1rem;
-            background-color: rgba(46, 204, 113, 0.9); /* Yeşil arka plan eklendi */
+            flex-wrap: wrap; /* Menü öğelerinin taşmaması için */
+            gap: 0.5rem; /* Menü öğeleri arasındaki boşluk */
+            background-color: rgba(46, 204, 113, 0.9);
             padding: 0.5rem 1rem;
             border-radius: 8px;
         }
-        header h1 {
+        nav ul li {
             margin: 0;
-            font-size: 1.8rem;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1rem; /* Menü yazı boyutu */
             transition: color 0.3s;
         }
         nav ul li a:hover {
@@ -135,9 +131,12 @@
 
         /* Mobil Cihazlar İçin Medya Sorguları */
         @media (max-width: 768px) {
-            .services-container {
-                flex-direction: column;
-                gap: 1rem;
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap; /* Menü öğelerini alt alta taşı */
+            }
+            nav ul li a {
+                font-size: 0.9rem; /* Yazı boyutunu küçült */
             }
             .service {
                 flex: 1 1 100%;
