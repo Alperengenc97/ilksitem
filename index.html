@@ -23,6 +23,8 @@
         }
         main {
             flex: 1;
+            display: flex;
+            padding: 1rem;
         }
         header {
             background-color: #28a745;
@@ -78,60 +80,47 @@
         header nav ul li a:hover {
             color: #27ae60;
         }
-        .hero {
-            text-align: center;
-            padding: 4rem 1rem;
-            background: linear-gradient(to right, #27ae60, #2ecc71);
-            color: white;
-            border-bottom-left-radius: 50% 10%;
-            border-bottom-right-radius: 50% 10%;
-        }
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        .hero a {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            background-color: #2ecc71;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
+        .address-info {
+            background-color: white;
+            border: 1px solid #ccc;
             border-radius: 8px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .hero a:hover {
-            background-color: #27ae60;
-            color: white;
-        }
-        .form-group {
-            margin-bottom: 1rem;
             padding: 1rem;
-            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            top: 1rem;
         }
-        input[type="text"] {
-            width: 90%;
+        .address-info h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .address-info label {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .address-info input[type="text"] {
+            width: 100%;
             padding: 0.5rem;
             font-size: 1rem;
             border: 1px solid #ccc;
             border-radius: 4px;
+            margin-bottom: 1rem;
         }
-        button {
-            background-color: #2ecc71;
-            color: white;
+        .address-info button {
+            background-color: white;
+            color: #28a745;
             padding: 0.8rem 2rem;
-            border: none;
+            border: 1px solid #28a745;
             border-radius: 8px;
             font-size: 1rem;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
+            width: 100%;
         }
-        button:hover {
-            background-color: #27ae60;
+        .address-info button:hover {
+            background-color: #28a745;
+            color: white;
         }
         footer {
             background-color: #333;
@@ -176,23 +165,15 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h2>İstanbul'un En Hızlı ve En Güvenilir Kurye Hizmeti</h2>
-            <p>Gönderileriniz en kısa sürede, güvenle yerine ulaşır. AG KURYE ile işinizi hızlandırın!</p>
-            <a href="#services">Hizmetlerimizi Keşfedin</a>
-        </section>
-
-        <section style="text-align: center; margin: 2rem;">
+        <section class="address-info">
             <h2>Adres Bilgileri</h2>
-            <div class="form-group">
+            <form>
                 <label for="origin">Çıkış Adresi:</label>
                 <input type="text" id="origin" placeholder="Çıkış adresini girin">
-            </div>
-            <div class="form-group">
                 <label for="destination">Varış Adresi:</label>
                 <input type="text" id="destination" placeholder="Varış adresini girin">
-            </div>
-            <button onclick="callCourier()">Kurye Çağır</button>
+                <button type="button" onclick="callCourier()">Kurye Çağır</button>
+            </form>
         </section>
     </main>
 
