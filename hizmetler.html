@@ -79,7 +79,11 @@
             border: 1px solid #27ae60;
             border-radius: 16px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Yatay ortalama */
+            justify-content: center; /* Dikey ortalama */
+            text-align: center; /* Metin ortalama */
             transition: transform 0.3s, box-shadow 0.3s;
         }
         .service:hover {
@@ -90,14 +94,12 @@
             color: #27ae60; /* Başlıklar açık yeşil */
             font-size: 1.6rem;
             margin-bottom: 1rem;
-            text-align: center;
         }
         .service p {
             font-size: 1rem;
             color: #333333; /* Paragraf yazıları koyu gri */
             line-height: 1.6;
             margin-bottom: 1.5rem;
-            text-align: justify;
         }
         .service button {
             display: block;
