@@ -11,8 +11,8 @@
         body {
             margin: 0;
             font-family: 'Open Sans', sans-serif;
-            background-color: #f9fff9;
-            color: #333;
+            background-color: #f0fdf0; /* Daha koyu açık yeşil */
+            color: #333333; /* Koyu gri */
         }
         header {
             background-color: #2ecc71;
@@ -75,7 +75,7 @@
             flex: 1 1 calc(50% - 2rem);
             padding: 1.5rem;
             background-color: #2ecc71;
-            color: white;
+            color: #333333; /* Metin rengi koyulaştırıldı */
             border: 1px solid #27ae60;
             border-radius: 16px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -87,14 +87,13 @@
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         }
         .service h3 {
-            color: white;
+            color: white; /* Başlıklar beyaz olarak bırakıldı */
             font-size: 1.6rem;
             margin-bottom: 1rem;
             text-align: center;
         }
         .service p {
             font-size: 1rem;
-            color: #f9fff9;
             line-height: 1.6;
             margin-bottom: 1.5rem;
             text-align: justify;
@@ -112,7 +111,7 @@
             transition: background-color 0.3s, color 0.3s;
         }
         .service button:hover {
-            background-color: #27ae60;
+            background-color: #1e874b; /* Daha koyu bir hover rengi */
             color: white;
         }
         footer {
@@ -156,26 +155,14 @@
     <section class="services-container">
         <div class="service">
             <h3>VIP Kurye Hizmeti</h3>
-            <p><strong>60 ve 90 Dakika İçerisinde Teslimat Garantisi:</strong> Gönderiniz belirlenen noktadan alınır ve en kısa sürede diğer noktaya ulaştırılır. Hızlı ve güvenli teslimat ihtiyacınız için ideal.</p>
+            <p>Gönderiniz belirlenen noktadan alınır ve en kısa sürede alıcısına ulaştırılır. Özellikle hızlı teslimat için ideal.</p>
             <button onclick="window.location.href='https://wa.me/?text=VIP%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
         </div>
 
         <div class="service">
             <h3>Ekspres Kurye Hizmeti</h3>
-            <p><strong>Aynı Gün Teslimat:</strong> Gün içerisinde gönderilerinizin hızlı ve güvenilir şekilde teslim edilmesini sağlar. Bütçe dostu bir seçenek.</p>
+            <p>Gün içerisinde hızlı ve güvenilir bir şekilde gönderilerinizi ulaştırır. Bütçe dostu bir seçenek.</p>
             <button onclick="window.location.href='https://wa.me/?text=Ekspres%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
-        </div>
-
-        <div class="service">
-            <h3>Gece Kurye Hizmeti</h3>
-            <p><strong>Mesai Saatleri Dışında Teslimat:</strong> Akşam ve gece saatlerinde ihtiyaç duyduğunuz özel gönderiler için hızlı ve güvenilir teslimat sunuyoruz.</p>
-            <button onclick="window.location.href='https://wa.me/?text=Gece%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
-        </div>
-
-        <div class="service">
-            <h3>Toplu Dağıtım Hizmeti</h3>
-            <p><strong>Çoklu Gönderiler İçin İdeal:</strong> Davetiye, broşür, fatura gibi gönderileriniz için profesyonel çözümler sunuyoruz. Promosyonlarınız için yanınızdayız.</p>
-            <button onclick="window.location.href='https://wa.me/?text=Toplu%20Dağıtım%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
         </div>
     </section>
 
