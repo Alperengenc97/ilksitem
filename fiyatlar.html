@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AG KURYE | Şeffaf ve uygun fiyatlı kurye hizmetleri. İstanbul içi en uygun fiyatlarla hızlı ve güvenilir teslimat çözümleri.">
+    <meta name="keywords" content="kurye fiyatları, İstanbul kurye ücretleri, uygun fiyatlı kurye, hızlı kurye, ekspres teslimat fiyatları">
     <title>Fiyatlandırma | AG KURYE</title>
     <style>
         body {
@@ -44,25 +46,58 @@
         }
         .pricing {
             text-align: center;
-            padding: 2rem;
+            padding: 3rem 2rem;
         }
         .pricing h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
             color: #27ae60;
         }
         .pricing-table {
-            margin: 2rem auto;
-            width: 80%;
-            max-width: 800px;
-            border-collapse: collapse;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
-        .pricing-table th, .pricing-table td {
-            border: 1px solid #ddd;
-            padding: 1rem;
-            text-align: center;
+        .pricing-card {
+            border: 1px solid #27ae60;
+            border-radius: 10px;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .pricing-table th {
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+        .pricing-card p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .pricing-card .price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: #27ae60;
+        }
+        .pricing-card a {
+            display: inline-block;
+            padding: 0.8rem 2rem;
             background-color: #2ecc71;
             color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+        .pricing-card a:hover {
+            background-color: #27ae60;
         }
         footer {
             background-color: #333;
@@ -78,38 +113,37 @@
         <h1>AG KURYE</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
                 <li><a href="fiyatlar.html">Fiyatlandırma</a></li>
-                <li><a href="#">Hizmetler</a></li>
-                <li><a href="#">İletişim</a></li>
+                <li><a href="index.html#iletisim">İletişim</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="pricing">
-        <h2>Fiyatlandırma</h2>
-        <table class="pricing-table">
-            <thead>
-                <tr>
-                    <th>Hizmet Türü</th>
-                    <th>Fiyat</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Ekspres Kurye</td>
-                    <td>100 TL</td>
-                </tr>
-                <tr>
-                    <td>Şehir İçi Teslimat</td>
-                    <td>50 TL</td>
-                </tr>
-                <tr>
-                    <td>Planlı Kurye Hizmeti</td>
-                    <td>200 TL</td>
-                </tr>
-            </tbody>
-        </table>
+        <h2>Fiyatlandırma Planlarımız</h2>
+        <p>Şeffaf ve uygun fiyatlarla hizmet sunuyoruz. İşte hizmetlerimiz için fiyat detayları:</p>
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <h3>Standart Teslimat</h3>
+                <p>Gönderiniz 2-4 saat içerisinde güvenle teslim edilir.</p>
+                <div class="price">49₺</div>
+                <a href="#">Daha Fazla Bilgi</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Ekspres Teslimat</h3>
+                <p>Gönderiniz 1 saat içerisinde adresine ulaşır.</p>
+                <div class="price">89₺</div>
+                <a href="#">Daha Fazla Bilgi</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Gün İçi Teslimat</h3>
+                <p>Gönderiniz aynı gün içinde teslim edilir.</p>
+                <div class="price">69₺</div>
+                <a href="#">Daha Fazla Bilgi</a>
+            </div>
+        </div>
     </section>
 
     <footer>
