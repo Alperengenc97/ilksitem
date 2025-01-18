@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AG KURYE | İstanbul'un hızlı ve güvenilir kurye hizmeti. Ekspres kurye, şehir içi teslimat ve planlı kurye hizmetlerimizle yanınızdayız.">
-    <meta name="keywords" content="İstanbul kurye, hızlı kurye, güvenilir kurye, ekspres kurye hizmeti">
-    <title>AG KURYE | Hızlı ve Güvenilir Kurye Hizmetleri</title>
+    <meta name="description" content="AG KURYE Hizmetleri | İstanbul'un hızlı ve güvenilir kurye çözümleri. Ekspres teslimat, moto kurye, şehir içi hızlı teslimat hizmetleriyle işinizi kolaylaştırın.">
+    <meta name="keywords" content="İstanbul kurye hizmetleri, moto kurye, hızlı teslimat, güvenilir kurye, ekspres kurye, acil kurye hizmetleri">
+    <title>Hizmetlerimiz | AG KURYE</title>
     <style>
         body {
             margin: 0;
@@ -44,37 +44,32 @@
         nav ul li a:hover {
             color: #e0f7e4;
         }
-        .hero {
+        .services {
+            padding: 2rem;
             text-align: center;
-            padding: 5rem 2rem;
-            background: linear-gradient(to right, #27ae60, #2ecc71);
-            color: white;
-            border-bottom-left-radius: 50% 10%;
-            border-bottom-right-radius: 50% 10%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .hero h2 {
+        .services h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        .hero a {
-            display: inline-block;
-            padding: 0.8rem 2rem;
+        .service-item {
+            margin: 2rem auto;
+            max-width: 800px;
             background-color: white;
-            color: #2ecc71;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 50px;
-            transition: background-color 0.3s, color 0.3s;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
         }
-        .hero a:hover {
-            background-color: #27ae60;
-            color: white;
+        .service-item h3 {
+            font-size: 1.8rem;
+            color: #2ecc71;
+            margin-bottom: 0.5rem;
+        }
+        .service-item p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
         }
         footer {
             background-color: #333;
@@ -82,25 +77,6 @@
             text-align: center;
             padding: 1rem 0;
             margin-top: 2rem;
-        }
-        .contact {
-            text-align: center;
-            padding: 2rem;
-        }
-        .contact a {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 1rem 2rem;
-            background-color: #25D366;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 50px;
-            transition: background-color 0.3s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .contact a:hover {
-            background-color: #1da851;
         }
     </style>
 </head>
@@ -112,21 +88,29 @@
                 <li><a href="index.html">Anasayfa</a></li>
                 <li><a href="hizmetler.html">Hizmetler</a></li>
                 <li><a href="fiyatlar.html">Fiyatlandırma</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
+                <li><a href="index.html#iletisim">İletişim</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Hızlı ve Güvenilir Kurye Hizmetleri</h2>
-        <p>Gönderileriniz en kısa sürede, güvenle yerine ulaşır.</p>
-        <a href="hizmetler.html">Hizmetlerimizi Keşfedin</a>
-    </section>
-
-    <section class="contact" id="iletisim">
-        <h3>Bizimle İletişime Geçin</h3>
-        <p>Her türlü sorunuz için bizimle iletişim kurabilirsiniz!</p>
-        <a href="https://wa.me/905400199734" target="_blank">WhatsApp ile İletişime Geç</a>
+    <section class="services">
+        <h2>Hizmetlerimiz</h2>
+        <div class="service-item">
+            <h3>Ekspres Kurye</h3>
+            <p>Acil teslimat gereksinimleriniz için en hızlı çözüm. Gönderileriniz İstanbul'un her yerine güvenle ulaştırılır.</p>
+        </div>
+        <div class="service-item">
+            <h3>Moto Kurye</h3>
+            <p>Yoğun şehir trafiğinde bile zamanında teslimat garantisi. Moto kuryelerimiz her zaman hizmetinizde.</p>
+        </div>
+        <div class="service-item">
+            <h3>Şehir İçi Teslimat</h3>
+            <p>İstanbul içinde her türlü gönderiniz için güvenilir ve uygun fiyatlı teslimat hizmetleri sunuyoruz.</p>
+        </div>
+        <div class="service-item">
+            <h3>Planlı Teslimatlar</h3>
+            <p>İş süreçlerinize uygun olarak belirlenen zamanlarda teslimat. Planlı kurye hizmetimizle operasyonlarınızı kolaylaştırın.</p>
+        </div>
     </section>
 
     <footer>
