@@ -86,6 +86,11 @@
             transform: translateY(-5px);
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         }
+        .service img {
+            display: block;
+            margin: 0 auto 1rem auto;
+            max-width: 80px;
+        }
         .service h3 {
             color: white;
             font-size: 1.6rem;
@@ -117,9 +122,6 @@
             background-color: #27ae60;
             color: white;
         }
-        .service button span {
-            margin-right: 0.5rem;
-        }
         footer {
             background-color: #333;
             color: white;
@@ -136,18 +138,6 @@
             }
             .service {
                 flex: 1 1 100%;
-            }
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                background-color: #2ecc71;
-                width: 100%;
-                padding: 0;
-            }
-            nav ul li {
-                margin: 0.5rem 0;
-                width: 100%;
-                text-align: center;
             }
         }
     </style>
@@ -172,22 +162,31 @@
 
     <section class="services-container">
         <div class="service">
+            <img src="vip-motor.png" alt="VIP Kurye">
             <h3>VIP Kurye Hizmeti</h3>
             <p><strong>60 ve 90 Dakika İçerisinde Teslimat Garantisi:</strong> Gönderiniz belirlenen noktadan alınır ve en kısa sürede diğer noktaya ulaştırılır. Özellikle hızlı ve güvenli teslimat ihtiyacınız olduğunda VIP Kurye Hizmeti tam size göre.</p>
             <button onclick="window.location.href='https://wa.me/?text=VIP%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">
-                <span>Hemen Talep Et</span> 🚚
+                Hemen Talep Et
             </button>
         </div>
 
         <div class="service">
-            <h3>Ekspres Kurye Hizmeti</h3>
-            <p><strong>Aynı Gün Teslimat:</strong> Daha uygun fiyatlarla gönderileriniz gün içerisinde alıcısına ulaştırılır. Hızlı, güvenilir ve bütçe dostu bir seçenek.</p>
-            <button onclick="window.location.href='https://wa.me/?text=Ekspres%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">
-                <span>Hemen Talep Et</span> 🚚
+            <img src="gece-motor.png" alt="Gece Kurye">
+            <h3>Gece Kurye Hizmeti</h3>
+            <p><strong>Mesai Saatleri Dışında Teslimat:</strong> Akşam ve gece saatlerinde ihtiyaç duyduğunuz özel gönderiler için idealdir. Çeşitli işlerinizde gece boyunca yanınızdayız.</p>
+            <button onclick="window.location.href='https://wa.me/?text=Gece%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">
+                Hemen Talep Et
             </button>
         </div>
 
-        <!-- Diğer hizmetler aynı formatta eklenebilir -->
+        <div class="service">
+            <img src="toplu-motor.png" alt="Toplu Dağıtım">
+            <h3>Toplu Dağıtım Hizmeti</h3>
+            <p><strong>Çoklu Gönderiler İçin İdeal:</strong> Davetiye, broşür, fatura gibi toplu gönderileriniz için imzalı veya imzasız teslimat seçenekleri sunuyoruz. Promosyon ve tanıtımlarınız için profesyonel çözüm ortağınız!</p>
+            <button onclick="window.location.href='https://wa.me/?text=Toplu%20Dağıtım%20Hizmeti%20talep%20etmek%20istiyorum.'">
+                Hemen Talep Et
+            </button>
+        </div>
     </section>
 
     <footer>
