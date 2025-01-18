@@ -6,7 +6,6 @@
     <meta name="description" content="AG KURYE | İstanbul'un lider kurye hizmeti. Hızlı ve güvenilir kurye hizmetleri.">
     <meta name="keywords" content="kurye, hızlı teslimat, İstanbul kurye, güvenilir hizmet">
     <title>AG KURYE | Hızlı ve Güvenilir Kurye Hizmetleri</title>
-    <script src="https://api-maps.yandex.com/2.1/?apikey=YOUR_API_KEY&lang=tr_TR" type="text/javascript"></script>
     <style>
         * {
             margin: 0;
@@ -49,6 +48,11 @@
         }
         header span {
             font-size: 1rem;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color: white;
         }
         header nav ul {
             list-style: none;
@@ -152,6 +156,9 @@
 <body>
     <header>
         <div style="display: flex; align-items: center; gap: 1rem;">
+            <!-- AG KURYE Yazısı -->
+            <h1>AG KURYE</h1>
+
             <!-- İstanbul Yazısı ve Simge -->
             <a href="index.html">
                 <img src="https://github.com/Alperengenc97/ilksitem/blob/main/konum.jpg?raw=true" alt="Konum">
@@ -200,13 +207,6 @@
     </footer>
 
     <script>
-        ymaps.ready(init);
-
-        function init() {
-            const suggestViewOrigin = new ymaps.SuggestView('origin');
-            const suggestViewDestination = new ymaps.SuggestView('destination');
-        }
-
         function callCourier() {
             const origin = document.getElementById('origin').value;
             const destination = document.getElementById('destination').value;
