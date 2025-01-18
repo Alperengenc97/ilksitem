@@ -13,7 +13,8 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body {
+        html, body {
+            overflow-x: hidden; /* Sayfanın sola kaymasını engeller */
             font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
             background-color: #f9fff9;
@@ -33,11 +34,15 @@
         .menu-toggle {
             display: none;
             cursor: pointer;
+            font-size: 1.5rem;
         }
         nav ul {
             list-style: none;
             display: flex;
             gap: 1rem;
+            background-color: #2ecc71; /* Şeffaflık sorununu çözer */
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
         }
         nav ul li a {
             color: white;
@@ -77,41 +82,6 @@
             background-color: #27ae60;
             color: white;
         }
-        .services {
-            max-width: 1200px;
-            margin: 2rem auto;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-        .services h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .service-card {
-            background-color: white;
-            color: #333;
-            padding: 1rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-            margin: 1rem;
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-        .service-card h3 {
-            color: #27ae60;
-            margin-bottom: 0.5rem;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        footer p {
-            margin: 0;
-        }
         .contact {
             text-align: center;
             padding: 2rem 1rem;
@@ -127,6 +97,12 @@
             font-weight: bold;
             border-radius: 50px;
         }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
@@ -138,6 +114,15 @@
             }
             nav ul.active {
                 display: flex;
+            }
+            nav ul li a {
+                font-size: 1rem; /* Daha küçük yazı */
+            }
+            .hero h2 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
             }
         }
     </style>
@@ -159,18 +144,6 @@
         <h2>İstanbul’un Lider Kurye Hizmeti</h2>
         <p>Gönderileriniz en kısa sürede, güvenle yerine ulaşır. AG KURYE ile işinizi hızlandırın!</p>
         <a href="#services">Hizmetlerimizi Keşfedin</a>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Hizmetlerimiz</h2>
-        <div class="service-card">
-            <h3>VIP Kurye</h3>
-            <p>En hızlı ve güvenilir kurye hizmetimiz.</p>
-        </div>
-        <div class="service-card">
-            <h3>Ekspres Kurye</h3>
-            <p>Gönderilerinizi gün içinde teslim ediyoruz.</p>
-        </div>
     </section>
 
     <section id="contact" class="contact">
