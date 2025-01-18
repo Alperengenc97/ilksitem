@@ -3,145 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AG KURYE | İstanbul'un lider kurye hizmeti. Hızlı ve güvenilir kurye hizmetleri.">
+    <meta name="description" content="AG KURYE | İstanbul'un lider kurye hizmeti. Hızlı ve güvenilir teslimatlar.">
     <meta name="keywords" content="kurye, hızlı teslimat, İstanbul kurye, güvenilir hizmet">
     <title>AG KURYE | Hızlı ve Güvenilir Kurye Hizmetleri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        html, body {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            font-family: 'Open Sans', sans-serif;
+        body {
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            background: linear-gradient(to bottom right, #e8f8e8, #ffffff, #f2f2f2);
-            background-attachment: fixed;
-            background-size: cover;
+            background-color: #f9f9f9;
             color: #333;
         }
-        main {
-            flex: 1;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 1rem auto;
-            width: 90%;
-            max-width: 1200px;
-        }
         header {
-            background-color: #28a745;
-            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 1rem 2rem;
+            background-color: #2a7bde;
+            color: white;
             position: sticky;
             top: 0;
             z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        header a {
-            text-decoration: none;
-            color: white;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        header img {
-            width: 20px;
-            height: 20px;
-        }
-        header span {
-            font-size: 1rem;
-        }
-        header h1 {
+        header .logo {
             font-size: 1.8rem;
-            margin: 0;
-            color: white;
+            font-weight: 700;
         }
         header nav ul {
-            list-style: none;
             display: flex;
+            list-style: none;
             gap: 1rem;
-            margin: 0;
-            padding: 0;
-        }
-        header nav ul li {
-            background-color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            transition: background-color 0.3s;
-        }
-        header nav ul li:hover {
-            background-color: #b8f1c4;
         }
         header nav ul li a {
+            color: white;
             text-decoration: none;
-            font-weight: bold;
-            color: #2ecc71;
+            font-weight: 500;
+            transition: color 0.3s;
         }
         header nav ul li a:hover {
-            color: #27ae60;
+            color: #cce7ff;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(45deg, #2a7bde, #5596e6);
+            color: white;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .hero a {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: white;
+            color: #2a7bde;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .hero a:hover {
+            background-color: #2a7bde;
+            color: white;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .content p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 1rem 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            margin-top: auto;
+            padding: 1rem;
+            margin-top: 2rem;
         }
         footer a {
-            color: #2ecc71;
+            color: #2a7bde;
             text-decoration: none;
-            margin: 0 0.5rem;
         }
         footer a:hover {
             text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <div style="display: flex; align-items: center; gap: 1rem;">
-            <!-- AG KURYE Yazısı -->
-            <h1>AG KURYE</h1>
-
-            <!-- İstanbul Yazısı ve Simge -->
-            <a href="index.html">
-                <img src="https://github.com/Alperengenc97/ilksitem/blob/main/konum.jpg?raw=true" alt="Konum">
-                <span>İstanbul</span>
-            </a>
-        </div>
+        <div class="logo">AG KURYE</div>
         <nav>
             <ul>
-                <li><a href="index.html">Anasayfa</a></li>
-                <li><a href="hizmetler.html">Hizmetler</a></li>
-                <li><a href="fiyatlar.html">Fiyatlandırma</a></li>
-                <li><a href="#contact">İletişim</a></li>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Hizmetler</a></li>
+                <li><a href="#">Fiyatlar</a></li>
+                <li><a href="#">İletisim</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>İstanbul'un En Hızlı ve En Güvenilir Kurye Hizmeti</h2>
-        <p>Gönderileriniz en kısa sürede, güvenle yerine ulaşır. AG KURYE ile işinizi hızlandırın!</p>
-    </main>
+    <section class="hero">
+        <h1>İstanbul'un Lider Kurye Hizmeti</h1>
+        <p>Hızlı ve güvenilir teslimat çözümleri.</p>
+        <a href="#">Hizmetlerimizi Keşfedin</a>
+    </section>
+
+    <div class="content">
+        <h2>Hakkımızda</h2>
+        <p>AG Kurye, İstanbul genelinde hızlı ve güvenilir kurye hizmetleri sunan öncü bir firmadır. Ekibimizle, gönderilerinizi zamanında teslim etmek için çalışıyoruz.</p>
+    </div>
 
     <footer>
-        <p>&copy; 2025 AG KURYE. Tüm Hakları Saklıdır.</p>
-        <p>
-            <a href="index.html">Anasayfa</a> |
-            <a href="hizmetler.html">Hizmetler</a> |
-            <a href="fiyatlar.html">Fiyatlandırma</a> |
-            <a href="#contact">İletişim</a>
-        </p>
+        <p>&copy; 2025 AG KURYE. Tüm hakları saklıdır. <a href="#">Gizlilik Politikamız</a></p>
     </footer>
 </body>
 </html>
