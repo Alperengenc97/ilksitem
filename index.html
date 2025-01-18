@@ -16,17 +16,17 @@
         }
         body {
             font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
             background-color: #f9f9f9;
             color: #333;
+            line-height: 1.6;
         }
         header {
+            background-color: #1d72b8;
+            color: white;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
-            background-color: #2a7bde;
-            color: white;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -34,16 +34,16 @@
         }
         header .logo {
             font-size: 1.8rem;
-            font-weight: 700;
+            font-weight: bold;
         }
         header nav ul {
-            display: flex;
             list-style: none;
-            gap: 1rem;
+            display: flex;
+            gap: 2rem;
         }
         header nav ul li a {
-            color: white;
             text-decoration: none;
+            color: white;
             font-weight: 500;
             transition: color 0.3s;
         }
@@ -51,13 +51,13 @@
             color: #cce7ff;
         }
         .hero {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: linear-gradient(45deg, #2a7bde, #5596e6);
+            background: linear-gradient(135deg, #1d72b8, #3c91e6);
             color: white;
+            text-align: center;
+            padding: 5rem 2rem;
         }
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
         }
         .hero p {
@@ -66,22 +66,23 @@
         }
         .hero a {
             display: inline-block;
-            padding: 0.8rem 2rem;
             background-color: white;
-            color: #2a7bde;
-            font-weight: bold;
-            border-radius: 50px;
+            color: #1d72b8;
             text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: bold;
             transition: background-color 0.3s, color 0.3s;
         }
         .hero a:hover {
-            background-color: #2a7bde;
+            background-color: #1d72b8;
             color: white;
         }
         .content {
             max-width: 1200px;
             margin: 2rem auto;
             padding: 1rem;
+            text-align: center;
         }
         .content h2 {
             font-size: 2rem;
@@ -95,12 +96,12 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            padding: 1rem 0;
         }
         footer a {
-            color: #2a7bde;
+            color: #1d72b8;
             text-decoration: none;
+            font-weight: bold;
         }
         footer a:hover {
             text-decoration: underline;
@@ -108,10 +109,10 @@
         @media (max-width: 768px) {
             header nav ul {
                 flex-direction: column;
-                gap: 0.5rem;
+                gap: 1rem;
             }
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
             .hero p {
                 font-size: 1rem;
