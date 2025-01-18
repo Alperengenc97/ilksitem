@@ -7,6 +7,7 @@
     <meta name="keywords" content="kurye, hızlı teslimat, İstanbul kurye, güvenilir hizmet">
     <title>AG KURYE | Hızlı ve Güvenilir Kurye Hizmetleri</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://api-maps.yandex.com/2.1/?apikey=YOUR_API_KEY&lang=tr_TR" type="text/javascript"></script>
     <style>
         * {
             margin: 0;
@@ -81,6 +82,18 @@
             background-color: #27ae60;
             color: white;
         }
+        .form-group {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
         footer {
             background-color: #333;
             color: white;
@@ -120,14 +133,25 @@
         </nav>
     </header>
 
-   <main>
-    <section class="hero">
-        <h2>İstanbul'un En Hızlı ve En Güvenilir Kurye Hizmeti</h2>
-        <p>Gönderileriniz en kısa sürede, güvenle yerine ulaşır. AG KURYE ile işinizi hızlandırın!</p>
-        <a href="#services">Hizmetlerimizi Keşfedin</a>
-    </section>
-</main>
+    <main>
+        <section class="hero">
+            <h2>İstanbul'un En Hızlı ve En Güvenilir Kurye Hizmeti</h2>
+            <p>Gönderileriniz en kısa sürede, güvenle yerine ulaşır. AG KURYE ile işinizi hızlandırın!</p>
+            <a href="#services">Hizmetlerimizi Keşfedin</a>
+        </section>
 
+        <section style="text-align: center; margin: 2rem;">
+            <h2>Adres Bilgileri</h2>
+            <div class="form-group">
+                <label for="origin">Çıkış Adresi:</label>
+                <input type="text" id="origin" placeholder="Çıkış adresini girin">
+            </div>
+            <div class="form-group">
+                <label for="destination">Varış Adresi:</label>
+                <input type="text" id="destination" placeholder="Varış adresini girin">
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 AG KURYE. Tüm Hakları Saklıdır.</p>
@@ -138,5 +162,14 @@
             <a href="#contact">İletişim</a>
         </p>
     </footer>
+
+    <script>
+        ymaps.ready(init);
+
+        function init() {
+            const suggestViewOrigin = new ymaps.SuggestView('origin');
+            const suggestViewDestination = new ymaps.SuggestView('destination');
+        }
+    </script>
 </body>
 </html>
