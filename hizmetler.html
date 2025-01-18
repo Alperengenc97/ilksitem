@@ -1,61 +1,174 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AG KURYE | İstanbul'un lider kurye hizmeti. Hızlı, güvenilir ve profesyonel teslimatlar. Ekspres gönderilerle zamanında teslimat.">
-    <meta name="keywords" content="kurye hizmeti, hızlı teslimat, güvenilir kurye, ekspres kurye, İstanbul kurye">
-    <title>Hizmetlerimiz | AG KURYE</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Open Sans', sans-serif;
-            background-color: #f9fff9;
-            color: #333;
-        }
-        header {
-            background-color: #2ecc71;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AG KURYE | İstanbul'un lider kurye hizmeti. Hızlı, güvenilir ve profesyonel teslimatlar. Ekspres gönderilerle zamanında teslimat.">
+<meta name="keywords" content="kurye hizmeti, hızlı teslimat, güvenilir kurye, ekspres kurye, İstanbul kurye">
+<title>Hizmetlerimiz | AG KURYE</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body {
+margin: 0;
+font-family: 'Open Sans', sans-serif;
+background-color: #f9fff9;
+color: #333;
+}
+header {
+background-color: #2ecc71;
+color: white;
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+margin: 0;
+font-size: 1.8rem;
+}
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+nav ul li {
+margin: 0 1rem;
+}
+nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s;
+}
+nav ul li a:hover {
+color: #e0f7e4;
+}
+.services-header {
+text-align: center;
+padding: 3rem 1rem;
+background: linear-gradient(to right, #27ae60, #2ecc71);
+color: white;
+border-bottom-left-radius: 50% 10%;
+border-bottom-right-radius: 50% 10%;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.services-header h2 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+.services-header p {
+font-size: 1.2rem;
+margin-bottom: 2rem;
+}
+.services-container {
+max-width: 1200px;
+margin: 2rem auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 2rem;
+padding: 0 1rem;
+}
+.service {
+padding: 1.5rem;
+background-color: #2ecc71;
+color: white;
+border: 1px solid #27ae60;
+border-radius: 16px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: left;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.service:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.service h3 {
+color: white;
+font-size: 1.6rem;
+margin-bottom: 1rem;
+text-align: center;
+}
+.service p {
+font-size: 1rem;
             color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.8rem;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        nav ul li {
-            margin: 0 1rem;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #e0f7e4;
-        }
-        .services-header {
-            text-align: center;
-            padding: 3rem 1rem;
-            background: linear-gradient(to right, #27ae60, #2ecc71);
-            color: white;
-            border-bottom-left-radius: 50% 10%;
-            border-bottom-right-radius: 50% 10%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .services-header h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .services-header 
+            color: #f9fff9;
+line-height: 1.6;
+margin-bottom: 1.5rem;
+text-align: justify;
+}
+.service button {
+display: block;
+margin: 0 auto;
+background-color: white;
+color: #2ecc71;
+border: none;
+padding: 0.8rem 1.2rem;
+font-size: 1rem;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s, color 0.3s;
+}
+.service button:hover {
+background-color: #27ae60;
+color: white;
+}
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 1rem 0;
+margin-top: 2rem;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>AG KURYE</h1>
+<nav>
+<ul>
+<li><a href="index.html">Anasayfa</a></li>
+<li><a href="hizmetler.html">Hizmetler</a></li>
+<li><a href="fiyatlar.html">Fiyatlandırma</a></li>
+<li><a href="#iletisim">İletişim</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="services-header">
+<h2>Hizmetlerimiz</h2>
+<p>AG Kurye'nin sunduğu profesyonel ve hızlı teslimat çözümleriyle tanışın.</p>
+</section>
+
+<section class="services-container">
+<div class="service">
+<h3>VIP Kurye Hizmeti</h3>
+<p><strong>60 ve 90 Dakika İçerisinde Teslimat Garantisi:</strong> Gönderiniz belirlenen noktadan alınır ve en kısa sürede diğer noktaya ulaştırılır. Özellikle hızlı ve güvenli teslimat ihtiyacınız olduğunda VIP Kurye Hizmeti tam size göre.</p>
+<button onclick="window.location.href='https://wa.me/?text=VIP%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
+</div>
+
+<div class="service">
+<h3>Ekspres Kurye Hizmeti</h3>
+<p><strong>Aynı Gün Teslimat:</strong> Daha uygun fiyatlarla gönderileriniz gün içerisinde alıcısına ulaştırılır. Hızlı, güvenilir ve bütçe dostu bir seçenek.</p>
+<button onclick="window.location.href='https://wa.me/?text=Ekspres%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
+</div>
+
+<div class="service">
+<h3>Gece Kurye Hizmeti</h3>
+<p><strong>Mesai Saatleri Dışında Teslimat:</strong> Akşam ve gece saatlerinde ihtiyaç duyduğunuz özel gönderiler için idealdir. Çeşitli işlerinizde gece boyunca yanınızdayız.</p>
+<button onclick="window.location.href='https://wa.me/?text=Gece%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
+</div>
+
+<div class="service">
+<h3>Toplu Dağıtım Hizmeti</h3>
+<p><strong>Çoklu Gönderiler İçin İdeal:</strong> Davetiye, broşür, dergi, fatura gibi toplu gönderileriniz için imzalı veya imzasız teslimat seçenekleri sunuyoruz. Promosyon ve tanıtımlarınız için profesyonel çözüm ortağınız!</p>
+<button onclick="window.location.href='https://wa.me/?text=Toplu%20Dağıtım%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2025 AG KURYE. Tüm hakları saklıdır.</p>
+</footer>
+</body>
+</html>
