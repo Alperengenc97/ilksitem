@@ -100,7 +100,9 @@
             text-align: justify;
         }
         .service button {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin: 1rem auto 0 auto;
             background-color: white;
             color: #2ecc71;
@@ -114,6 +116,9 @@
         .service button:hover {
             background-color: #27ae60;
             color: white;
+        }
+        .service button span {
+            margin-right: 0.5rem;
         }
         footer {
             background-color: #333;
@@ -169,26 +174,20 @@
         <div class="service">
             <h3>VIP Kurye Hizmeti</h3>
             <p><strong>60 ve 90 Dakika İçerisinde Teslimat Garantisi:</strong> Gönderiniz belirlenen noktadan alınır ve en kısa sürede diğer noktaya ulaştırılır. Özellikle hızlı ve güvenli teslimat ihtiyacınız olduğunda VIP Kurye Hizmeti tam size göre.</p>
-            <button onclick="window.location.href='https://wa.me/?text=VIP%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
+            <button onclick="window.location.href='https://wa.me/?text=VIP%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">
+                <span>Hemen Talep Et</span> 🚚
+            </button>
         </div>
 
         <div class="service">
             <h3>Ekspres Kurye Hizmeti</h3>
             <p><strong>Aynı Gün Teslimat:</strong> Daha uygun fiyatlarla gönderileriniz gün içerisinde alıcısına ulaştırılır. Hızlı, güvenilir ve bütçe dostu bir seçenek.</p>
-            <button onclick="window.location.href='https://wa.me/?text=Ekspres%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
+            <button onclick="window.location.href='https://wa.me/?text=Ekspres%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">
+                <span>Hemen Talep Et</span> 🚚
+            </button>
         </div>
 
-        <div class="service">
-            <h3>Gece Kurye Hizmeti</h3>
-            <p><strong>Mesai Saatleri Dışında Teslimat:</strong> Akşam ve gece saatlerinde ihtiyaç duyduğunuz özel gönderiler için idealdir. Çeşitli işlerinizde gece boyunca yanınızdayız.</p>
-            <button onclick="window.location.href='https://wa.me/?text=Gece%20Kurye%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
-        </div>
-
-        <div class="service">
-            <h3>Toplu Dağıtım Hizmeti</h3>
-            <p><strong>Çoklu Gönderiler İçin İdeal:</strong> Davetiye, broşür, dergi, fatura gibi toplu gönderileriniz için imzalı veya imzasız teslimat seçenekleri sunuyoruz. Promosyon ve tanıtımlarınız için profesyonel çözüm ortağınız!</p>
-            <button onclick="window.location.href='https://wa.me/?text=Toplu%20Dağıtım%20Hizmeti%20talep%20etmek%20istiyorum.'">Hemen Talep Et</button>
-        </div>
+        <!-- Diğer hizmetler aynı formatta eklenebilir -->
     </section>
 
     <footer>
