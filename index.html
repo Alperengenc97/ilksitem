@@ -36,6 +36,20 @@
             align-items: center;
             justify-content: space-between;
         }
+        header a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        header img {
+            width: 20px;
+            height: 20px;
+        }
+        header span {
+            font-size: 1rem;
+        }
         header nav ul {
             list-style: none;
             display: flex;
@@ -138,11 +152,11 @@
 <body>
     <header>
         <div style="display: flex; align-items: center; gap: 1rem;">
-            <h1 style="margin: 0; font-size: 1.8rem;">AG KURYE</h1>
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <img src="https://github.com/Alperengenc97/ilksitem/blob/main/konum.jpg?raw=true" alt="Konum" style="width: 24px; height: 24px;">
-                <span style="font-size: 1rem; color: white;">İstanbul</span>
-            </div>
+            <!-- İstanbul Yazısı ve Simge -->
+            <a href="index.html">
+                <img src="https://github.com/Alperengenc97/ilksitem/blob/main/konum.jpg?raw=true" alt="Konum">
+                <span>İstanbul</span>
+            </a>
         </div>
         <nav>
             <ul>
