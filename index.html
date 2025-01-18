@@ -6,7 +6,6 @@
     <meta name="description" content="AG KURYE | İstanbul'un lider kurye hizmeti. Hızlı ve güvenilir kurye hizmetleri.">
     <meta name="keywords" content="kurye, hızlı teslimat, İstanbul kurye, güvenilir hizmet">
     <title>AG KURYE | Hızlı ve Güvenilir Kurye Hizmetleri</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://api-maps.yandex.com/2.1/?apikey=YOUR_API_KEY&lang=tr_TR" type="text/javascript"></script>
     <style>
         * {
@@ -150,6 +149,9 @@
                 <label for="destination">Varış Adresi:</label>
                 <input type="text" id="destination" placeholder="Varış adresini girin">
             </div>
+            <button onclick="callCourier()" style="background-color: #2ecc71; color: white; padding: 0.8rem 2rem; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer;">
+                Kurye Çağır
+            </button>
         </section>
     </main>
 
@@ -169,6 +171,17 @@
         function init() {
             const suggestViewOrigin = new ymaps.SuggestView('origin');
             const suggestViewDestination = new ymaps.SuggestView('destination');
+        }
+
+        function callCourier() {
+            const origin = document.getElementById('origin').value;
+            const destination = document.getElementById('destination').value;
+
+            if (origin && destination) {
+                alert(`Kurye çağırılıyor...\nÇıkış: ${origin}\nVarış: ${destination}`);
+            } else {
+                alert('Lütfen çıkış ve varış adreslerini girin.');
+            }
         }
     </script>
 </body>
