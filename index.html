@@ -14,7 +14,7 @@
             box-sizing: border-box;
         }
         html, body {
-            overflow-x: hidden; /* Sayfanın sola kaymasını engeller */
+            overflow-x: hidden;
             font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
             background-color: #f9fff9;
@@ -40,7 +40,7 @@
             list-style: none;
             display: flex;
             gap: 1rem;
-            background-color: #2ecc71; /* Şeffaflık sorununu çözer */
+            background-color: #2ecc71;
             padding: 0.5rem 1rem;
             border-radius: 8px;
         }
@@ -116,7 +116,7 @@
                 display: flex;
             }
             nav ul li a {
-                font-size: 1rem; /* Daha küçük yazı */
+                font-size: 1rem;
             }
             .hero h2 {
                 font-size: 2rem;
@@ -129,7 +129,13 @@
 </head>
 <body>
     <header>
-        <h1>AG KURYE</h1>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <h1>AG KURYE</h1>
+            <span style="font-size: 1rem; color: white; display: flex; align-items: center;">
+                <span>İstanbul</span>
+                <span style="margin-left: 0.3rem;">📍</span>
+            </span>
+        </div>
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <nav>
             <ul>
