@@ -85,12 +85,58 @@
         .services p {
             margin: 0.5rem 0;
         }
+        .pricing {
+            padding: 2rem;
+            background-color: #e8fbe8;
+            text-align: center;
+        }
+        .pricing h3 {
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+        .pricing table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .pricing table, .pricing th, .pricing td {
+            border: 1px solid #27ae60;
+        }
+        .pricing th, .pricing td {
+            padding: 1rem;
+            text-align: center;
+        }
+        .pricing th {
+            background-color: #2ecc71;
+            color: white;
+        }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 1rem 0;
             margin-top: 2rem;
+        }
+        .contact {
+            text-align: center;
+            padding: 2rem;
+        }
+        .contact a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem 2rem;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact a:hover {
+            background-color: #1da851;
         }
     </style>
 </head>
@@ -117,6 +163,38 @@
         <p>- Ekspres Kurye</p>
         <p>- Şehir İçi Teslimat</p>
         <p>- Planlı Kurye Hizmeti</p>
+    </section>
+
+    <section class="pricing" id="fiyatlar">
+        <h3>Fiyatlandırma</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hizmet Türü</th>
+                    <th>Fiyat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ekspres Kurye</td>
+                    <td>50 TL</td>
+                </tr>
+                <tr>
+                    <td>Şehir İçi Teslimat</td>
+                    <td>30 TL</td>
+                </tr>
+                <tr>
+                    <td>Planlı Kurye</td>
+                    <td>25 TL</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="contact" id="iletisim">
+        <h3>Bizimle İletişime Geçin</h3>
+        <p>Her türlü sorunuz için bizimle iletişim kurabilirsiniz!</p>
+        <a href="https://wa.me/905400199734" target="_blank">WhatsApp ile İletişime Geç</a>
     </section>
 
     <footer>
